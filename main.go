@@ -56,6 +56,9 @@ func main() {
 							break
 						}
 					}
+					if !exist {
+						logger.Info("New ip address not found")
+					}
 					// Add new ip address
 					if !exist {
 						logger.Infof("Add ip address: %s", ip)
